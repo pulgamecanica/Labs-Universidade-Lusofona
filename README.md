@@ -17,4 +17,4 @@
 
 frontend-labs
 
-- [](https://pulgamecanica.github.io/Labs-Universidade-Lusofona/frontend-labs)
+- [Frontend Labs](https://pulgamecanica.github.io/Labs-Universidade-Lusofona/frontend-labs)
