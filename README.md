@@ -1,21 +1,20 @@
 
 ---
 
-## Programming Course at Universidade Lusofona
+# Programming Course at Universidade Lusofona
 
 ---
 
-python-labs
+### python-labs
 
 ---
 
-boring-lab
+### boring-lab
+
+- [Boring Lab](https://pulgamecanica.github.io/Labs-Universidade-Lusofona/boring-lab)
 
 ---
 
 frontend-labs
 
-- some link here
-- some link here
-- some link here
-- some link here
+- [](https://pulgamecanica.github.io/Labs-Universidade-Lusofona/frontend-labs)
