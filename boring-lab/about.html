@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style/index.css">
+	<script src="javascript/index.js"></script>
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
+	<title>Silly Website - About</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/72e594ef21.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap" rel="stylesheet">
+
+</head>
+<body>
+	<nav id="navBar">
+		<div class="topnav">
+			<div class="topnav-centered">
+				<a href="./index.html"><img src="img/logo100px.png" alt="logo surfLogo boringLogo"></a>
+			</div>
+			<a href="./index.html">Home</a>
+			<a href="./about.html" class="active">About</a>
+			<a href="./games.html">Games</a>
+			<a href="./posts.html">Posts</a>
+			<a href="./faq.html">FAQ</a>
+			<div class="topnav-right">
+				<a id="darkMode" onclick="myFunction()"><i class="fas fa-moon"></i></a>
+				<a class="profile" href="./login.html"><i class="fas fa-user"></i></a>
+			</div>
+		</div>
+	</nav>
+	<div class="about-wrapper">
+		<figure class="word-cloud">
+			<h1>The BoringWeb</h1>
+				<img src="img/word-tree-transparent.png">
+			<figcaption>WordCloud - WebSite  Distribution</figcaption>
+			<details>
+				<summary>See Full Hyerarchy</summary>
+				<article>
+					<h3>WEBSITE PAGES HIERARCHY</h3>
+					<ul>
+						<li>
+							<i>INDEX</i>
+							<ul>
+								<li>index.html</li>
+								<li>login.html</li>
+							</ul>
+						</li>
+						<li>
+							<i>SUBINDEX</i>
+							<ul>
+								<li>about.html</li>
+								<li>faq.html</li>
+								<li>games.html</li>
+								<li>news.html</li>
+								<li>posts.html</li>
+							</ul>
+						</li>
+						<li>
+							<i>EXTRAS</i>
+							<ul>
+								<li>website-guide.html</li>
+							</ul>
+						</li>
+					</ul>
+				</article>
+				<h6>Click the tree!</h6>
+				<svg id="details-word-cloud-svg" width="300" height="300">
+					<image href="img/word-tree-transparent.png" width="300" height="300"></image>
+					<a href="./index.html">
+						<polygon opacity="0" points="186,76 230,180 190,200 145,90" ></polygon>
+					</a>
+					<a href="./about.html">
+						<polygon opacity="0" points="95,112 155,90 164,109 105,130" ></polygon>
+					</a>
+					<a href="./faq.html">
+						<polygon opacity="0" points="120,125 155,110 164,127 130,141" ></polygon>
+					</a>
+					<a href="./games.html">
+						<polygon  opacity="0.0" points="26,90 183,160 173,179 16,110" ></polygon>
+					</a>
+					<a href="./games.html">
+						<polygon opacity="0" points="64,96 210,40 220,60 74,115" ></polygon>
+					</a>
+					<a href="./games.html">
+						<polygon opacity="0" points="70,150 153,164 149,181 66,165" ></polygon>
+					</a>
+					<a href="./posts.html">
+						<polygon opacity="0" points="45,185 60,126 78,130 62,190" ></polygon>
+					</a>
+					<a href="./news.html">
+						<polygon opacity="0" points="205,120 220,116 238,160 220,166" ></polygon>
+					</a>
+				</svg>
+			</details>
+		</figure>
+
+		<div class="videos-wrapper">
+			<h1>WebSite Development Videos</h1>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/N_XT4xU5upk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/fFRN9OYdp5E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+
+		<div class="table-one">
+			<table>
+				<caption>WebSite Technical Info</caption>
+				<thead>
+					<tr>
+						<th>Title</th>
+						<th>Description</th>
+						<th>Examples</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="inner-item">Layout</td>
+						<td class="inner-item">For the Layout I used flexbox for the mayority of the pages. Although you can also see that I used flexbox in the Post page!</td>
+						<td><a href="./website-guide.html">Layout Example</a></td>
+					</tr>
+					<tr>
+						<td class="inner-item">Responsivity</td>
+						<td class="inner-item">I used many media queries for the responsivity, I decided to do it this way because I wanted the website to adapt to any envitoment without any restrictions. This are the different sizes where the website will respond:
+							<br>
+						|0px-540px|-|541px-700px|-|701px-901px|-|0px-900px|-|901px-INF|-|0px-1000px|-|1500px-INF|</td>
+						<td><i class="fas fa-mobile-alt"></i><i class="fas fa-tablet-alt"></i><i class="fas fa-laptop"></i></td>
+					</tr>
+					<tr>
+						<td class="inner-item">Selectors</td>
+						<td class="inner-item">I used this Selectors: <b> element, .class, .class.class, .class .class, :hover, nth-of-type(n), :focus;</b> Among others.</td>
+						<td>tr:nth-of-type(even), a:hover</td>
+					</tr>
+					<tr>
+						<td class="inner-item">Tags</td>
+						<td class="inner-item">HTML5 mian, header, footer, article, section, figure; etc.</td>
+						<td id="tags"><article><header>Header</header><section>Content</section><footer>Footer</footer></article></td>
+					</tr>
+					<tr>
+						<td class="inner-item">Animations</td>
+						<td class="inner-item">I created a few aniamtions,my personal favourite  was the animated background, wich I recycled and used the same animation for the active Nav Bar item's.</td>
+						<td class="animation-container">
+							<div class="animation01">
+						    <div><p><a href="./index.html">Home</a></p></div>
+						    <div><p><a href="./games.html">Games</a></p></div>
+						    <div><p><a href="./posts.html">Posts</a></p></div>
+						    <div><p><a href="./faq.html">FAQ</a></p></div>
+						    <div><p><a href="./news.html">NEWS</a></p></div>
+						  </div>
+						</td>
+					</tr>
+					<tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="3">Last Update - 18 Oct 2020</td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+
+		<div class="table-two">
+			<table>
+				<caption>WebSite Details</caption>
+				<thead>
+					<tr>
+						<th>Description</th>
+						<th>Value</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="inner-item">Boring Pages</td>
+						<td>The boring web has <span id="pages">9</span> boring pages.</td>
+					</tr>
+					<tr>
+						<td class="inner-item">Boring Images</td>
+						<td>The boring web has <span id="pages">30</span> boring images.</td>
+					</tr>
+					<tr>
+						<td class="inner-item">Boring Videos</td>
+						<td>The boring web has <span id="pages">3</span> boring videos.</td>
+					</tr>
+					<tr>
+						<td class="inner-item">Boring Animations</td>
+						<td>The boring web has <span id="pages">5</span> boring Animation.</td>
+					</tr>
+					<tr>
+						<td class="inner-item">Boring Links</td>
+						<td>The boring web has <span id="pages">9</span> boring external link.</td>
+					</tr>
+					<tr>
+						<td class="inner-item">Boring Visitors</td>
+						<td>The boring web has had <span id="pages">97,999</span> boring visitors.</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="3">Last Update - 18 Oct 2020</td>
+					</tr>
+				</tfoot>
+			</table>	
+		</div>
+		<div class="layouts">
+			<h2>Check out the Website Layouts!</h2>
+			<a href="website-guide.html">
+				<i class="fas fa-mobile-alt"></i>
+				<i class="fas fa-tablet-alt"></i>
+				<i class="fas fa-laptop"></i>
+			</a>
+			
+		</div>
+		<div class="extra">
+			<ul>
+				<caption>Check out other very, very boring websites!</caption>
+				<li><i class="fas fa-caret-right"></i><a href="https://theuselessweb.com/"> The Useless Web</a></li>
+				<li><i class="fas fa-caret-right"></i><a href="https://weirdorconfusing.com/"> weird or confussing</a></li>
+				<li><i class="fas fa-caret-right"></i><a href="http://orteil.dashnet.org/nested"> Infinite Nested</a></li>
+				<li><i class="fas fa-caret-right"></i><a href="http://endless.horse/"> Endless Horse</a></li>
+				<li><i class="fas fa-caret-right"></i><a href="http://www.koalastothemax.com/"> Cool Split</a></li>
+			</ul>
+		</div>
+	</div>
+	
+
+	<div class="footer">
+		<div class="quick-links">
+			<p>Boring Website</p>
+			<ul class="quicks">
+				<a href="./faq.html"><li>FAQ</li></a>
+				<a href="./news.html"><li>NEWS</li></a>
+				<a href="./about.html"><li>ABOUT</li></a>
+				<a href="./website-guide.html"><li>LAYOUTS</li></a>
+			</ul>
+			<ul class="socials-list">
+				<li class="facebook"><a href=""><i class="fab fa-facebook"></i></a></li>
+				<li class="instagram"><a href=""><i class="fab fa-instagram"></i></a></li>
+				<li class="youtube"><a href=""><i class="fab fa-youtube"></i></a></li>
+				<li class="github"><a href=""><i class="fab fa-github-alt"></i></a></li>
+				<li class="twitch"><a href=""><i class="fab fa-twitch"></i></a></li>
+				<li class="hat"><a href=""><i class="fab fa-redhat"></i></a></li>
+			</ul>
+			<p>Tel: 999-999-999 <i class="fas fa-dot-circle"></i> contact@boring.org</p>
+			<p>Website by Pulgamecanica</p>
+			<p>Copyright <i class="far fa-copyright"></i>2020 | Designed by BORING </p>
+		</div>
+	</div>
+</body>
+</html>

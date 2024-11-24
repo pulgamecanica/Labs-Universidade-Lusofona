@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../style/layout_example_style.css">
+	<title>BoringWeb</title>
+	<script src="https://kit.fontawesome.com/72e594ef21.js" crossorigin="anonymous"></script>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+<script>
+	function openGames(colName){
+		var coll = document.getElementsByClassName(colName);
+		// var seeGames = document.getElementById('see-games-'+colName);
+		// var hideGames = document.getElementById('hide-games-'+colName);
+		var i;
+		for (i = 0; i < coll.length; i++) {
+		    coll[i].classList.toggle("active-collapsible");
+		    var content = coll[i].nextElementSibling;
+		    if (content.style.display == "block") {
+		      content.style.display = "none";
+		      // seeGames.style.display = "inline"
+		      // hideGames.style.display = "none"
+		    } else {
+		      content.style.display = "block";
+		      // seeGames.style.display = "none"
+		      // hideGames.style.display = "inline"
+		    }
+		}
+	}
+</script>
+<body>
+	<div class="nav">Nav</div>
+	<div class="games-wrapper">
+		<h1 id="games-section-title">Boring Games</h1>
+		<section class="games-section">
+			<section class="game-container">
+				<h2>Name</h2>
+				<article>
+					<figure>
+						GAME
+						<figcaption>Game Details</figcaption>
+						<hr>
+						<details>
+							<summary>Read Rules</summary>
+							<p>The rules of this games</p>
+							<p>This game is based on this other game</p>
+							<footer>Developed by DoggoMaster09 on Mon 18 Sep 21</footer>
+						</details>
+					</figure>
+					<aside>STAT</aside>
+				</article>
+			</section>
+			<section class="game-container">
+				<h2>Name</h2>
+				<article>
+					<figure>
+						GAME
+						<figcaption>Game Details</figcaption>
+						<hr>
+						<details>
+							<summary>Read Rules</summary>
+							<p>The rules of this games</p>
+							<p>This game is based on this other game</p>
+							<footer>Developed by DoggoMaster09 on Mon 18 Sep 21</footer>
+						</details>
+					</figure>
+					<aside>STAT</aside>
+				</article>
+			</section>
+			<section class="game-container span-overflow-game span-boring-game">
+				<h2>Name</h2>
+				<article>
+					<figure>
+						GAME
+						<figcaption>Game Details</figcaption>
+						<hr>
+						<details>
+							<summary>Read Rules</summary>
+							<p>The rules of this games</p>
+							<p>This game is based on this other game</p>
+							<footer>Developed by DoggoMaster09 on Mon 18 Sep 21</footer>
+						</details>
+					</figure>
+					<aside>STAT</aside>
+				</article>
+			</section>
+			<section class="game-container span-overflow-game span-boring-game">
+				<h2>Name</h2>
+				<article>
+					<figure>
+						GAME
+						<figcaption>Game Details</figcaption>
+						<hr>
+						<details>
+							<summary>Read Rules</summary>
+							<p>The rules of this games</p>
+							<p>This game is based on this other game</p>
+							<footer>Developed by DoggoMaster09 on Mon 18 Sep 21</footer>
+						</details>
+					</figure>
+					<aside>STAT</aside>
+				</article>
+			</section>
+			<section class="game-container span-overflow-game span-boring-game">
+				<h2>Name</h2>
+				<article>
+					<figure>
+						GAME
+						<figcaption>Game Details</figcaption>
+						<hr>
+						<details>
+							<summary>Read Rules</summary>
+							<p>The rules of this games</p>
+							<p>This game is based on this other game</p>
+							<footer>Developed by DoggoMaster09 on Mon 18 Sep 21</footer>
+						</details>
+					</figure>
+					<aside>STAT</aside>
+				</article>
+			</section>
+			<section class="game-container span-overflow-game span-boring-game">
+				<h2>Name</h2>
+				<article>
+					<figure>
+						GAME
+						<figcaption>Game Details</figcaption>
+						<hr>
+						<details>
+							<summary>Read Rules</summary>
+							<p>The rules of this games</p>
+							<p>This game is based on this other game</p>
+							<footer>Developed by DoggoMaster09 on Mon 18 Sep 21</footer>
+						</details>
+					</figure>
+					<aside>STAT</aside>
+				</article>
+			</section>
+			<section class="game-container span-overflow-game span-boring-game">
+				<h2>Name</h2>
+				<article>
+					<figure>
+						GAME
+						<figcaption>Game Details</figcaption>
+						<hr>
+						<details>
+							<summary>Read Rules</summary>
+							<p>The rules of this games</p>
+							<p>This game is based on this other game</p>
+							<footer>Developed by DoggoMaster09 on Mon 18 Sep 21</footer>
+						</details>
+					</figure>
+					<aside>STAT</aside>
+				</article>
+			</section>
+		</section>
+		<h2 class="see-more-games" id="see-games-span-boring-game" ><button onclick="openGames('span-boring-game');"><i class="fas fa-angle-double-down"></i> <p id="see-games-span-boring-game"> See all games </p><i class="fas fa-angle-double-down"></i></button></h2>
+
+		<h2 class="see-more-games"id="hide-games-span-boring-game"><button onclick="openGames('span-boring-game');"><i class="fas fa-angle-double-down fa-rotate-90"></i><p id="hide-games-span-boring-game"> Hide games </p> <i class="fas fa-angle-double-down fa-rotate-90"></i></button></h2>
+		<h1 id="games-section-title">Creative Games</h1>
+		<section class="games-section">
+			<section class="game-container">
+				<h2>Name</h2>
+				<article>
+					<figure>
+						GAME
+						<figcaption>Game Details</figcaption>
+						<hr>
+						<details>
+							<summary>Read Rules</summary>
+							<p>The rules of this games</p>
+							<p>This game is based on this other game</p>
+							<footer>Developed by DoggoMaster09 on Mon 18 Sep 21</footer>
+						</details>
+					</figure>
+					<aside>STAT</aside>
+				</article>
+			</section>
+			<section class="game-container">
+				<h2>Name</h2>
+				<article>
+					<figure>
+						GAME
+						<figcaption>Game Details</figcaption>
+						<hr>
+						<details>
+							<summary>Read Rules</summary>
+							<p>The rules of this games</p>
+							<p>This game is based on this other game</p>
+							<footer>Developed by DoggoMaster09 on Mon 18 Sep 21</footer>
+						</details>
+					</figure>
+					<aside>STAT</aside>
+				</article>
+			</section>
+			<section class="game-container span-overflow-game span-creative-game">
+				<h2>Name</h2>
+				<article>
+					<figure>
+						GAME
+						<figcaption>Game Details</figcaption>
+						<hr>
+						<details>
+							<summary>Read Rules</summary>
+							<p>The rules of this games</p>
+							<p>This game is based on this other game</p>
+							<footer>Developed by DoggoMaster09 on Mon 18 Sep 21</footer>
+						</details>
+					</figure>
+					<aside>STAT</aside>
+				</article>
+			</section>
+			<section class="game-container span-overflow-game span-creative-game">
+				<h2>Name</h2>
+				<article>
+					<figure>
+						GAME
+						<figcaption>Game Details</figcaption>
+						<hr>
+						<details>
+							<summary>Read Rules</summary>
+							<p>The rules of this games</p>
+							<p>This game is based on this other game</p>
+							<footer>Developed by DoggoMaster09 on Mon 18 Sep 21</footer>
+						</details>
+					</figure>
+					<aside>STAT</aside>
+				</article>
+			</section>
+			<section class="game-container span-overflow-game span-creative-game">
+				<h2>Name</h2>
+				<article>
+					<figure>
+						GAME
+						<figcaption>Game Details</figcaption>
+						<hr>
+						<details>
+							<summary>Read Rules</summary>
+							<p>The rules of this games</p>
+							<p>This game is based on this other game</p>
+							<footer>Developed by DoggoMaster09 on Mon 18 Sep 21</footer>
+						</details>
+					</figure>
+					<aside>STAT</aside>
+				</article>
+			</section>
+			<section class="game-container span-overflow-game span-creative-game">
+				<h2>Name</h2>
+				<article>
+					<figure>
+						GAME
+						<figcaption>Game Details</figcaption>
+						<hr>
+						<details>
+							<summary>Read Rules</summary>
+							<p>The rules of this games</p>
+							<p>This game is based on this other game</p>
+							<footer>Developed by DoggoMaster09 on Mon 18 Sep 21</footer>
+						</details>
+					</figure>
+					<aside>STAT</aside>
+				</article>
+			</section>
+			<section class="game-container span-overflow-game span-creative-game">
+				<h2>Name</h2>
+				<article>
+					<figure>
+						GAME
+						<figcaption>Game Details</figcaption>
+						<hr>
+						<details>
+							<summary>Read Rules</summary>
+							<p>The rules of this games</p>
+							<p>This game is based on this other game</p>
+							<footer>Developed by DoggoMaster09 on Mon 18 Sep 21</footer>
+						</details>
+					</figure>
+					<aside>STAT</aside>
+				</article>
+			</section>
+		</section>
+		<h2 class="see-more-games"><button onclick="openGames('span-creative-game');"><i class="fas fa-angle-double-down"></i> <p class="see-hide-games-span-creative-game"> See all games </p> <i class="fas fa-angle-double-down"> </i></button></h2>
+		<h1 id="games-section-title">Useless Games</h1>
+		<section class="games-section">
+			<section class="game-container">
+				<h2>Name</h2>
+				<article>
+					<figure>
+						GAME
+						<figcaption>Game Details</figcaption>
+						<hr>
+						<details>
+							<summary>Read Rules</summary>
+							<p>The rules of this games</p>
+							<p>This game is based on this other game</p>
+							<footer>Developed by DoggoMaster09 on Mon 18 Sep 21</footer>
+						</details>
+					</figure>
+					<aside>STAT</aside>
+				</article>
+			</section>
+			<section class="game-container">
+				<h2>Name</h2>
+				<article>
+					<figure>
+						GAME
+						<figcaption>Game Details</figcaption>
+						<hr>
+						<details>
+							<summary>Read Rules</summary>
+							<p>The rules of this games</p>
+							<p>This game is based on this other game</p>
+							<footer>Developed by DoggoMaster09 on Mon 18 Sep 21</footer>
+						</details>
+					</figure>
+					<aside>STAT</aside>
+				</article>
+			</section>
+			<section class="game-container span-overflow-game span-useless-game">
+				<h2>Name</h2>
+				<article>
+					<figure>
+						GAME
+						<figcaption>Game Details</figcaption>
+						<hr>
+						<details>
+							<summary>Read Rules</summary>
+							<p>The rules of this games</p>
+							<p>This game is based on this other game</p>
+							<footer>Developed by DoggoMaster09 on Mon 18 Sep 21</footer>
+						</details>
+					</figure>
+					<aside>STAT</aside>
+				</article>
+			</section>
+			<section class="game-container span-overflow-game span-useless-game">
+				<h2>Name</h2>
+				<article>
+					<figure>
+						GAME
+						<figcaption>Game Details</figcaption>
+						<hr>
+						<details>
+							<summary>Read Rules</summary>
+							<p>The rules of this games</p>
+							<p>This game is based on this other game</p>
+							<footer>Developed by DoggoMaster09 on Mon 18 Sep 21</footer>
+						</details>
+					</figure>
+					<aside>STAT</aside>
+				</article>
+			</section>
+			<section class="game-container span-overflow-game span-useless-game">
+				<h2>Name</h2>
+				<article>
+					<figure>
+						GAME
+						<figcaption>Game Details</figcaption>
+						<hr>
+						<details>
+							<summary>Read Rules</summary>
+							<p>The rules of this games</p>
+							<p>This game is based on this other game</p>
+							<footer>Developed by DoggoMaster09 on Mon 18 Sep 21</footer>
+						</details>
+					</figure>
+					<aside>STAT</aside>
+				</article>
+			</section>
+			<section class="game-container span-overflow-game span-useless-game">
+				<h2>Name</h2>
+				<article>
+					<figure>
+						GAME
+						<figcaption>Game Details</figcaption>
+						<hr>
+						<details>
+							<summary>Read Rules</summary>
+							<p>The rules of this games</p>
+							<p>This game is based on this other game</p>
+							<footer>Developed by DoggoMaster09 on Mon 18 Sep 21</footer>
+						</details>
+					</figure>
+					<aside>STAT</aside>
+				</article>
+			</section>
+			<section class="game-container span-overflow-game span-useless-game">
+				<h2>Name</h2>
+				<article>
+					<figure>
+						GAME
+						<figcaption>Game Details</figcaption>
+						<hr>
+						<details>
+							<summary>Read Rules</summary>
+							<p>The rules of this games</p>
+							<p>This game is based on this other game</p>
+							<footer>Developed by DoggoMaster09 on Mon 18 Sep 21</footer>
+						</details>
+					</figure>
+					<aside>STAT</aside>
+				</article>
+			</section>
+		</section>
+		<h2 class="see-more-games"><button onclick="openGames('span-useless-game');"><i class="fas fa-angle-double-down"></i> <p class="see-hide-games-span-useless-game"> See all games </p> <i class="fas fa-angle-double-down"> </i></button></h2>
+	</div>
+	<div class="footer">Footer</div>
+</body>
+</html>
